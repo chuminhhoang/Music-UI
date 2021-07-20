@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music UI</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard-->
+        <div id="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-radius" style="background-image: url('./img/song.jpg')"></div>
+
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <!-- Control play-->
+                <div class="btn btn-restart">
+                    <i class="fa fa-redo"></i>
+                </div>
+                <div class="btn btn-undo">
+                    <i class="fa fa-step-backward"></i>
+                </div>
+                <div class="btn btn-play">
+                    <i class="fa fa-play icon-play"></i>
+                    <i class="fa fa-pause icon-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa fa-random"></i>
+                </div>
+
+            </div>
+            <!-- Control input-->
+            <input id="process" class="process" type="range" value="0" step="1" min="0" max="100">
+    
+            <audio src="" id="audio"></audio>
+        </div>
+        <!-- End: Dashboard-->
+
+        <div class="playlist">
+            
+        </div>
+
+        
+    </div>
+    <script src="./main.js">
+        // const app = {
+        //     songs: [
+        //         {
+        //             name: 'Cưới nhau đi',
+        //             singer: '2T',
+        //             path: './assets/music/song1.mp3',
+        //             image: './assets/img/song1.jpg'
+        //         },
+        //         {
+        //             name: 'Tình yêu hoang mang',
+        //             singer: 'Khánh Phong',
+        //             path: './assets/music/song2.mp3',
+        //             image: './assets/img/song2.jpg'
+        //         },
+        //         {
+        //             name: 'Luôn ở phía sau em',
+        //             singer: 'Khánh Phong',
+        //             path: './assets/music/song3.mp3',
+        //             image: './assets/img/song3.jpg'
+        //         },
+        //         {
+        //             name: 'Anh sợ mất em',
+        //             singer: 'The men',
+        //             path: './assets/music/song4.mp3',
+        //             image: './assets/img/song4.jpg'
+        //         },
+        //         {
+        //             name: 'Hình bóng của mây',
+        //             singer: 'Khánh Phương',
+        //             path: './assets/music/song5.mp3',
+        //             image: './assets/img/song5.jpg'
+        //         },
+        //     ],
+        //     render: function() {
+        //         console.log(123);
+        //     },
+        //     start: function() {
+        //         this.render()
+        //     }
+        // }
+        // app.start()
+    </script>
+</body>
+</html>
